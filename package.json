@@ -1,0 +1,57 @@
+{
+  "name": "vue-multipage-form",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit",
+    "docs": "jsdoc -c jsdoc.json",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@storybook/addon-actions": "^5.1.11",
+    "@storybook/addon-links": "^5.1.11",
+    "@storybook/addons": "^5.1.11",
+    "@storybook/vue": "^5.1.11",
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-e2e-nightwatch": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-plugin-unit-jest": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "jsdoc": "^3.6.3",
+    "jsdoc-vuejs": "^3.0.2",
+    "lint-staged": "^8.1.5",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
