@@ -25,6 +25,11 @@ npm run test
 npm run lint
 ```
 
+### Run storybook component viewer
+```
+npm run storybook
+```
+
 ### Run your end-to-end tests
 ```
 npm run test:e2e
